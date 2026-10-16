@@ -9,6 +9,10 @@
   <meta name="description" content="Undangan pernikahan Mochamad Rafi Rizky Fadila, S.M dan Faradita Agenovindia Pramesti, S.Psi,.M.Si 
     Kami mengundang Anda untuk berbagi kebahagiaan bersama kami.">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --cream: #f8f5ef;
@@ -128,7 +132,7 @@
       overflow-y: auto;
       background:
         linear-gradient(#26392bd9, #26392bc7),
-        url("foto-utama.jpg.JPG") center 40% / cover no-repeat,
+        url("foto-utama.jpg") center 40% / cover no-repeat,
         var(--green-dark);
       color: white;
       text-align: center;
@@ -176,7 +180,7 @@
       padding: 90px 20px;
       background:
         linear-gradient(#26392b90, #26392b90),
-        url("foto-utama.jpg.JPG") center / cover no-repeat,
+        url("foto-utama.jpg") center / cover no-repeat,
         var(--green-dark);
       color: white;
       text-align: center;
@@ -448,6 +452,167 @@
         transition: none !important;
       }
     }
+
+
+    /* ===== TEMA ELEGAN MODERN: SAGE, IVORY, DAN EMAS ===== */
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      letter-spacing: 0.05px;
+    }
+
+    h1, h2, h3, .section-title, .couple-card h3, .story h3, footer h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+
+    .eyebrow {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 3.5px;
+    }
+
+    .button, .small, .hero-date {
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+
+    .button {
+      padding: 13px 25px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.6px;
+      box-shadow: 0 6px 18px rgba(18, 30, 20, 0.16);
+    }
+
+    .cover {
+      background-color: var(--green-dark);
+      background-image:
+        linear-gradient(180deg,
+          rgba(25, 39, 28, 0.30) 0%,
+          rgba(25, 39, 28, 0.20) 38%,
+          rgba(25, 39, 28, 0.58) 100%),
+        url("./foto-utama.jpg");
+      background-position: center, center 40%;
+      background-size: cover, cover;
+      background-repeat: no-repeat, no-repeat;
+    }
+
+    .cover-content {
+      width: min(100%, 560px);
+      padding: 34px 18px;
+      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.28);
+    }
+
+    .cover .eyebrow {
+      color: #f0d9a6;
+    }
+
+    .cover h1 {
+      margin: 24px 0;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(64px, 13vw, 94px);
+      font-weight: 500;
+      line-height: 0.88;
+      letter-spacing: 0.4px;
+    }
+
+    .cover p {
+      font-size: 12px;
+      letter-spacing: 0.4px;
+    }
+
+    .cover .guest-name {
+      margin: 10px 0 24px;
+      color: #f4dfb2;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    .cover .button {
+      margin-top: 8px;
+      border: 1px solid #e5cc91;
+      background: rgba(53, 72, 58, 0.84);
+      color: #fffdf8;
+    }
+
+    .cover .button:hover {
+      background: rgba(35, 52, 40, 0.96);
+    }
+
+    .hero {
+      min-height: 100vh;
+      min-height: 100svh;
+      background-color: var(--green-dark);
+      background-image:
+        linear-gradient(180deg,
+          rgba(25, 39, 28, 0.28) 0%,
+          rgba(25, 39, 28, 0.22) 42%,
+          rgba(25, 39, 28, 0.66) 100%),
+        url("./foto-utama.jpg");
+      background-position: center, center 40%;
+      background-size: cover, cover;
+      background-repeat: no-repeat, no-repeat;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(54px, 10vw, 88px);
+      font-weight: 500;
+      line-height: 0.98;
+      letter-spacing: 0.2px;
+      text-shadow: 0 2px 22px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero-date {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 3px;
+    }
+
+    .section-title {
+      font-size: clamp(38px, 7vw, 52px);
+      line-height: 1.08;
+    }
+
+    .couple-card h3 {
+      font-size: 32px;
+      line-height: 1.1;
+    }
+
+    .story h3, footer h2 {
+      font-size: 36px;
+    }
+
+    .location-card, .event-card, .story, .couple-card {
+      box-shadow: 0 8px 28px rgba(48, 62, 48, 0.045);
+    }
+
+    .gallery-grid img {
+      border-radius: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .cover {
+        background-position: center, 55% center;
+      }
+
+      .cover h1 {
+        font-size: clamp(60px, 15vw, 78px);
+      }
+
+      .hero {
+        min-height: 92svh;
+        background-position: center, 55% center;
+      }
+
+      .hero h1 {
+        font-size: clamp(46px, 12vw, 64px);
+      }
+    }
+
   </style>
 </head>
 
@@ -595,8 +760,7 @@
             <h3>Akad Nikah</h3>
             <p><strong>Minggu, 18 Juli 2027</strong></p>
             <p>08.00 WIB – selesai</p>
-            <p>Rumah Mempelai Wanita Jl.Sumberingin Kulon </p>
-            <p>Kabupaten Tulungagung</p>
+            <p>Rumah Mempelai Wanita Jl.Sumberingin Kulon, Kabupaten Tulungagung</p>
           </article>
 
           <article class="event-card">
@@ -604,8 +768,7 @@
             <h3>Resepsi</h3>
             <p><strong>Selasa, 20 Juli 2027</strong></p>
             <p>11.00–14.00 WIB</p>
-            <p>Rumah Mempelai Wanita Jl.Sumberingin Kulon </p>
-            <p>Kabupaten Tulungagung</p>
+            <p>Rumah Mempelai Wanita Jl.Sumberingin Kulon, Kabupaten Tulungagung</p>
           </article>
         </div>
       </div>
